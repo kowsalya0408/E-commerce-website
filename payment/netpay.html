@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PaymentPortal</title>
+        <link rel="stylesheet" type="text/CSS" href="payment.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="section mt-3">
+             <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item ">
+                  <a class="nav-link text-secondary " href="payment.html">Debit Card</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-secondary "   href="creditpay.html">Credit Card</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary"  href="upipay.html">UPI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" >Net Banking</a>
+                  </li>
+                
+              </ul>
+            </div>
+              <div class="container-fluid">
+              <div class="card w-sm-50 mt-5 border-0" >
+                
+                <form action="bill.php" class="card-body mt-5">
+                <label for="Netbanking" class="form-label">Select your bank:</label>
+                        <select class="form-select mb-3" aria-label="Select your Bank" required>
+                        <option selected>HDFC Bank</option>
+                        <option value="1">State bank of India</option>
+                        <option value="2">Indian Overseas Bank</option>
+                        <option value="3">Indian Bank</option>
+                        <option value="4">Citi Bank</option>
+                        <option value="5">City Union Bank</option>
+                        <option value="6">Axis Bank</option>
+                        <option value="7">HDFC Bank</option>
+                        <option value="8">IDFC First Bank</option>
+                        <option value="9">Canara Bank</option>
+                        <option value="10">Union Bank</option>
+                        <option value="11">Punjab National Bank</option>
+                        <option value="12">UCO Bank</option>                 
+                        </select>
+                    
+                     
+                      <div class="align">
+                      <button class="btn btn-primary w-100" type="submit">Make Payment</button>
+					  </div>
+                    </form>
+                    <script type="text/javascript">
+                      function thanks() {
+					    alert("Payment Successful!");
+                        alert("Thank you for your purchase! Visit again!");
+                      }
+                    </script>
+                    </div>
+                </div>
+ 
+             </div> 
+            </div>
+        
+        </div>
+    </body>
+</html>
